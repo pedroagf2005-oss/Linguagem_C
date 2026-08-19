@@ -43,7 +43,7 @@ int main(void)
     {
         printf("ele é ruim\n");
     }
-//calculadora simples
+//Calculadora simples
     float num1, num2, resultado;
     char operador;
 
@@ -85,4 +85,18 @@ int main(void)
 
     printf("%.2f %c %.2f = %.2f\n", num1, operador, num2, resultado);
     return 0;
+}
+//média de notas
+#include <stdio.h>
+int main(){
+float num1, num2, num3, média;
+printf ("Digite a primeira nota: ");
+scanf ("%f", &num1);
+printf("Digite a sua segunda nota: ");
+scanf ("%f", &num2);
+printf ("digite a sua terceira nota: ");
+ scanf("%f", &num3);
+ média = (num1  + num2 + num3) /3;
+ printf("sua média é: %.2f", média);
+  return 0;
 }
