@@ -100,3 +100,29 @@ printf ("digite a sua terceira nota: ");
  printf("sua média é: %.2f", média);
   return 0;
 }
+//conversor de temperatura
+#include <stdio.h>
+int main(){
+float temperatura, convertida;
+ char escala;
+  printf("Digite a temperatura: ");
+    scanf("%f", &temperatura);
+  printf("Digite a escala (Cp para Celsius ou F para Fahrenheit): ");
+  scanf(" %c", &escala);
+
+            if (escala == 'C' || escala =='c'){
+    convertida = (temperatura * 9.0/5.0) + 32.0;
+   printf("%.2f C = %.2f F\n", temperatura, convertida);
+            }
+  else if (escala == 'F' || escala == 'f'){
+    convertida = (temperatura - 32.0) * 5.0/9.0;
+    printf("%.2f F = %.2f C\n", temperatura, convertida);
+  } else{
+    printf("escala inválida\n");
+  }
+return 0;
+
+
+  }
+
+         
